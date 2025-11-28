@@ -24,9 +24,15 @@ const seedDatabase = async () => {
   if (!ADMIN2_PASSWORD) missingVars.push('ADMIN2_PASSWORD');
 
   if (missingVars.length > 0) {
+<<<<<<< HEAD
     console.error('❌ Missing required environment variables:');
     console.error(`   ${missingVars.join(', ')}`);
     console.error('\n📝 Create a .env file in the server directory with:');
+=======
+    console.error(' Missing required environment variables:');
+    console.error(`   ${missingVars.join(', ')}`);
+    console.error('\n Create a .env file in the server directory with:');
+>>>>>>> d7821fe0dab4b1de5da1338632f5a699f14e42e2
     console.error('   ADMIN1_EMAIL=admin@notes.app');
     console.error('   ADMIN1_PASSWORD=your-secure-password');
     console.error('   ADMIN2_EMAIL=superadmin@notes.app');
@@ -79,8 +85,13 @@ const seedDatabase = async () => {
 
   saveDb();
   
+<<<<<<< HEAD
   console.log('✅ Database seeded successfully!');
   console.log('\n📋 Admin accounts created:');
+=======
+  console.log('Database seeded successfully!');
+  console.log('\n Admin accounts created:');
+>>>>>>> d7821fe0dab4b1de5da1338632f5a699f14e42e2
   console.log(`   ${ADMIN1_EMAIL} (${ADMIN1_NAME})`);
   console.log(`   ${ADMIN2_EMAIL} (${ADMIN2_NAME})`);
   console.log('\n👤 Test User Credentials:');

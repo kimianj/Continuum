@@ -4,12 +4,19 @@ node_modules/
 # Build outputs
 client/dist/
 
+<<<<<<< HEAD
 # Environment files - NEVER commit these!
 .env
 .env.local
 .env.production
 .env*.local
 server/.env
+=======
+# Environment files
+.env
+.env.local
+.env.production
+>>>>>>> d7821fe0dab4b1de5da1338632f5a699f14e42e2
 
 # Database
 server/db/*.db

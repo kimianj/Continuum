@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 // Use relative URL - works in both dev (via Vite proxy) and production
+=======
+>>>>>>> d7821fe0dab4b1de5da1338632f5a699f14e42e2
 const API_BASE = '/api';
 
 // Helper to get auth headers
