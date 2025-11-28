@@ -1,4 +1,9 @@
 const API_BASE = '/api';
+const API_URL =
+  import.meta.env.VITE_API_URL || "http://localhost:3001/api";
+
+export default API_URL;
+
 
 // Helper to get auth headers
 const getHeaders = () => {
@@ -37,6 +42,7 @@ export const authApi = {
     });
     return handleResponse(response);
   },
+  
 
   getMe: async () => {
     const response = await fetch(`${API_BASE}/auth/me`, {
