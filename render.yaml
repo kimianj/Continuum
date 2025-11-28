@@ -1,0 +1,27 @@
+# Render Blueprint - One-click deployment configuration
+# https://render.com/docs/blueprint-spec
+
+services:
+  - type: web
+    name: notes-app
+    runtime: node
+    plan: free
+    rootDir: ./
+    nodeVersion: "20"
+    buildCommand: npm run render-build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        generateValue: true
+      # Admin credentials - set these in Render dashboard after deployment
+      # Or uncomment and set values here (less secure but convenient for demos)
+      # - key: ADMIN1_EMAIL
+      #   value: admin@notes.app
+      # - key: ADMIN1_PASSWORD
+      #   value: your-secure-password-here
+      # - key: ADMIN2_EMAIL
+      #   value: superadmin@notes.app
+      # - key: ADMIN2_PASSWORD
+      #   value: your-secure-password-here
