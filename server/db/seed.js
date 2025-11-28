@@ -48,7 +48,7 @@ const seedDatabase = async () => {
   // Hash passwords
   const adminPassword1 = await bcrypt.hash(ADMIN1_PASSWORD, 10);
   const adminPassword2 = await bcrypt.hash(ADMIN2_PASSWORD, 10);
-  const userPassword = await bcrypt.hash('testuser123!', 10);
+  const userPassword = await bcrypt.hash('#', 10);
 
   // Insert admin users
   const insertUser = db.prepare(
