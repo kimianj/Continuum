@@ -93,8 +93,8 @@ const seedDatabase = async () => {
   console.log(`   ${ADMIN1_EMAIL} (${ADMIN1_NAME})`);
   console.log(`   ${ADMIN2_EMAIL} (${ADMIN2_NAME})`);
   console.log('\n Test User Credentials:');
-  console.log('   Email: john@example.com | Password: testuser123!');
-  console.log('   Email: jane@example.com | Password: testuser123!');
+  console.log('   Email: john@example.com | Password: #');
+  console.log('   Email: jane@example.com | Password: #');
 };
 
 seedDatabase();
